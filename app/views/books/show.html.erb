@@ -1,0 +1,8 @@
+<%= link_to 'Remove', @book, method: :delete, data: { confirm: 'Are you sure?' } %>
+<%= link_to 'Home', books_path %>
+
+<h1><%= @book.title %></h1>
+<h4>Author: <%= @book.author %></h4>
+<h4>Genre: <%= @book.genre %></h4>
+<h4>Price: <%= @book.price %></h4>
+<h4>Published date: <%= @book.published_date%></h4>
