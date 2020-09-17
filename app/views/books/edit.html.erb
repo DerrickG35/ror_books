@@ -1,0 +1,11 @@
+<h3>Update a Book</h3>
+<%= form_with model: @book do |form| %>
+  <%= form.text_field :title, placeholder: "title" %>
+  <%= form.text_field :author, placeholder: "author" %>
+  <%= form.select :genre, ["Fiction", "Non-Fiction", "Drama", "History", "Thriller"] %>
+  <%= form.text_field :price, placeholder: "price" %>
+  <%= form.date_select :published_date, :start_year=>1900,:end_year=>2020%>
+
+
+  <%= form.submit %>
+<% end %>
